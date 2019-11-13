@@ -106,7 +106,7 @@ drop view if exists adult_50k.v_t1_adult_test_target;
 
 create view adult_50k.v_t1_adult_test_target as
     select id,
-           case when target = '>50K' then 1 else 0 end as target
+           case when target = '>50K.' then 1 else 0 end as target
     from adult_50k.adult_test;
 
 drop view if exists adult_50k.v_t1_adult_test_dataset;
